@@ -230,24 +230,24 @@ workflows:
   build_deploy_and_test:
     jobs:
       - configure_env_vars
-      - static_tests
+      # - static_tests
       - build_php
       - deploy_to_pantheon:
           requires:
-            - static_tests
+            # - static_tests
             - build_php
-      - visual_regression_test:
-          requires:
-            - configure_env_vars
-            - deploy_to_pantheon
-          filters:
-            branches:
-              ignore:
-                - master
-      - behat_test:
-          requires:
-            - deploy_to_pantheon
-            - visual_regression_test
+      # - visual_regression_test:
+      #     requires:
+      #       - configure_env_vars
+      #       - deploy_to_pantheon
+      #     filters:
+      #       branches:
+      #         ignore:
+      #           - master
+      # - behat_test:
+      #     requires:
+      #       - deploy_to_pantheon
+      #       - visual_regression_test
 
   scheduled_update_check:
     triggers:
