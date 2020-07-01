@@ -17,6 +17,7 @@
   - [Deployment Using Terminus](#deployment-using-terminus)
     - [Test Environment](#test-environment)
     - [Live Environment](#live-environment)
+- [Troubleshooting](/docs/troubleshooting.md)
 
 ## Pantheon Environments
 
