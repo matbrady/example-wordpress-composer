@@ -1,6 +1,6 @@
 {
-  "name": "pantheon-systems/example-wordpress-composer",
-  "description": "",
+  "name": "threespot/example-wordpress-composer",
+  "description": "Terminus build tools template for a Pantheon Composer WordPress application",
   "type": "project",
   "keywords": [],
   "repositories": [
